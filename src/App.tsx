@@ -639,42 +639,11 @@ export default function App() {
               )}
 
               {/* Game Manual */}
-              <div className="text-left bg-slate-950/60 border border-[#334155] p-4 rounded-xl mb-4 text-xs text-slate-350">
+              <div className="text-left bg-slate-950/60 border border-[#334155] p-4 rounded-xl mb-6 text-xs text-slate-350">
                 <span className="font-bold text-slate-200 block mb-1">🎮 コントロール手法:</span>
                 <ul className="space-y-1.5 ml-1 pl-1 list-none text-slate-400">
                   <li className="flex items-center gap-1">⌨️ <strong className="text-sky-300">キーボード:</strong> 矢印キー 又は <strong className="text-sky-300">WASD</strong></li>
                 </ul>
-              </div>
-
-              {/* Operation/Control Selector buttons */}
-              <div className="text-left mb-6">
-                <span className="text-[10px] font-mono uppercase tracking-widest text-slate-400 block mb-2 font-bold pl-1">
-                  🕹️ 操作用の追加ボタン表示
-                </span>
-                <div className="grid grid-cols-2 gap-2">
-                  <button
-                    onClick={() => setControlMode('DPAD')}
-                    className={`py-2 px-3 text-xs font-bold rounded-xl border transition-all flex items-center justify-center gap-1.5 ${
-                      controlMode === 'DPAD'
-                        ? 'bg-sky-505/20 bg-sky-950/45 border-sky-450/80 text-sky-300 shadow-md shadow-sky-500/10 scale-[1.02]'
-                        : 'bg-slate-800/40 border-slate-700/60 text-slate-400 hover:bg-slate-800'
-                    }`}
-                  >
-                    <Gamepad2 className="w-3.5 h-3.5 text-sky-400" />
-                    移動ボタンあり
-                  </button>
-                  <button
-                    onClick={() => setControlMode('SWIPE')}
-                    className={`py-2 px-3 text-xs font-bold rounded-xl border transition-all flex items-center justify-center gap-1.5 ${
-                      controlMode === 'SWIPE'
-                        ? 'bg-sky-505/20 bg-sky-950/45 border-sky-450/80 text-sky-300 shadow-md shadow-sky-500/10 scale-[1.02]'
-                        : 'bg-slate-800/40 border-slate-700/60 text-slate-400 hover:bg-slate-800'
-                    }`}
-                  >
-                    <Smartphone className="w-3.5 h-3.5 text-sky-400" />
-                    移動ボタンなし
-                  </button>
-                </div>
               </div>
 
               <button
