@@ -652,7 +652,7 @@ export default function App() {
                 id="btn-play-start"
               >
                 <Play className="w-5 h-5 fill-current text-sky-200" />
-                ゲームを開始する (Space)
+                ゲームを開始する
               </button>
             </motion.div>
           )}
@@ -1323,7 +1323,7 @@ export default function App() {
                 id="btn-play-again"
               >
                 <RefreshCw className="w-4 h-4 text-sky-400 animate-spin" style={{ animationDuration: '6s' }} />
-                最初からやり直す (Space)
+                最初からやり直す
               </button>
             </motion.div>
           )}
