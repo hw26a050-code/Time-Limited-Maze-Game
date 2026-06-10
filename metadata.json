@@ -1,0 +1,6 @@
+{
+  "name": "Time-Limited Maze Game",
+  "description": "A time-attack maze escape game with auto-generated square and rectangular mazes where you start from the center and escape to a random corner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
